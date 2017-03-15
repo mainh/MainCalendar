@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backCalendar"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:id="@+id/text_alarm_title"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/text_input_height"
+            android:layout_marginLeft="@dimen/option_item_horizontal_margin"
+            android:layout_marginRight="@dimen/option_item_horizontal_margin"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/edit_text_bg"
+            android:gravity="center_vertical"
+            android:hint="@string/alarm_content"
+            android:singleLine="true"
+            android:maxLength="50"
+            android:paddingEnd="@dimen/edit_text_padding"
+            android:paddingStart="@dimen/edit_text_padding"
+            android:textSize="@dimen/normal_font_size" />
+
+        <RelativeLayout
+            android:id="@+id/display_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/option_item_height"
+            android:layout_marginLeft="@dimen/option_item_horizontal_margin"
+            android:layout_marginRight="@dimen/option_item_horizontal_margin"
+            android:layout_marginTop="16dip"
+            android:background="@drawable/shape_top_corner_no_bottom_line">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/option_layer_horizontal_margin"
+                android:gravity="center"
+                android:text="@string/notice_in_calendar"
+                android:textColor="@color/optionLabel"
+                android:textSize="@dimen/normal_font_size" />
+
+            <com.jjforever.wgj.maincalendar.monthui.SwitchButton
+                android:id="@+id/display_in_calendar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/option_layer_horizontal_margin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pause_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/option_item_height"
+            android:layout_marginLeft="@dimen/option_item_horizontal_margin"
+            android:layout_marginRight="@dimen/option_item_horizontal_margin"
+            android:background="@drawable/shape_no_corner_without_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/option_layer_horizontal_margin"
+                android:gravity="center"
+                android:text="@string/pause_alarm"
+                android:textColor="@color/optionLabel"
+                android:textSize="@dimen/normal_font_size" />
+
+            <com.jjforever.wgj.maincalendar.monthui.SwitchButton
+                android:id="@+id/alarm_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/option_layer_horizontal_margin" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/type_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/option_item_height"
+            android:layout_marginLeft="@dimen/option_item_horizontal_margin"
+            android:layout_marginRight="@dimen/option_item_horizontal_margin"
+            android:background="@drawable/shape_no_corner_without_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/option_layer_horizontal_margin"
+                android:gravity="center"
+                android:text="@string/alarm_type"
+                android:textColor="@color/optionLabel"
+                android:textSize="@dimen/normal_font_size" />
+
+            <TextView
+                android:id="@+id/alarm_type"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/option_layer_horizontal_margin"
+                android:gravity="center"
+                android:textColor="@color/optionValue"
+                android:textSize="@dimen/option_value_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alarm_date_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/option_item_height"
+            android:layout_marginLeft="@dimen/option_item_horizontal_margin"
+            android:layout_marginRight="@dimen/option_item_horizontal_margin"
+            android:background="@drawable/shape_no_corner_without_bottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/option_layer_horizontal_margin"
+                android:gravity="center"
+                android:text="@string/notice_date"
+                android:textColor="@color/optionLabel"
+                android:textSize="@dimen/normal_font_size" />
+
+            <TextView
+                android:id="@+id/alarm_date"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/option_layer_horizontal_margin"
+                android:gravity="center"
+                android:textColor="@color/optionValue"
+                android:textSize="@dimen/option_value_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/alarm_start_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/option_item_height"
+            android:layout_marginLeft="@dimen/option_item_horizontal_margin"
+            android:layout_marginRight="@dimen/option_item_horizontal_margin"
+            android:background="@drawable/shape_no_corner_without_bottom"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/option_layer_horizontal_margin"
+                android:gravity="center"
+                android:text="@string/work_start_date"
+                android:textColor="@color/optionLabel"
+                android:textSize="@dimen/normal_font_size" />
+
+            <TextView
+                android:id="@+id/alarm_start"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/option_layer_horizontal_margin"
+                android:gravity="center"
+                android:paddingEnd="@dimen/option_layer_horizontal_margin"
+                android:paddingStart="30dip"
+                android:textColor="@color/optionValue"
+                android:textSize="@dimen/option_value_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/notice_time_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/option_item_height"
+            android:layout_marginLeft="@dimen/option_item_horizontal_margin"
+            android:layout_marginRight="@dimen/option_item_horizontal_margin"
+            android:background="@drawable/shape_bottom_corner_no_top_line">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/option_layer_horizontal_margin"
+                android:gravity="center"
+                android:text="@string/notice_time"
+                android:textColor="@color/optionLabel"
+                android:textSize="@dimen/normal_font_size" />
+
+            <TextView
+                android:id="@+id/alarm_notice_time"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/option_layer_horizontal_margin"
+                android:gravity="center"
+                android:textColor="@color/optionValue"
+                android:textSize="@dimen/option_value_size" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/alarm_remark"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/option_item_horizontal_margin"
+            android:layout_marginRight="@dimen/option_item_horizontal_margin"
+            android:layout_marginTop="12dip"
+            android:background="@null"
+            android:cursorVisible="true"
+            android:gravity="top"
+            android:hint="@string/alarm_remark"
+            android:minLines="7"
+            android:lineSpacingExtra="8dip"
+            android:maxLength="512"
+            android:padding="@dimen/edit_text_padding"
+            android:textColor="@color/colorEditText"
+            android:textSize="@dimen/normal_font_size" />
+    </LinearLayout>
+</ScrollView>

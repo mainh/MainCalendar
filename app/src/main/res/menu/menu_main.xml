@@ -1,0 +1,30 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.jjforever.wgj.maincalendar.MainActivity">
+    <item
+        android:id="@+id/action_daily"
+        android:orderInCategory="100"
+        android:title="@string/action_daily"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_alarm_clock"
+        android:orderInCategory="100"
+        android:title="@string/action_alarm_clock"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_shifts_work"
+        android:orderInCategory="100"
+        android:title="@string/action_work_list"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_about"
+        android:orderInCategory="100"
+        android:title="@string/action_about"
+        app:showAsAction="never" />
+</menu>

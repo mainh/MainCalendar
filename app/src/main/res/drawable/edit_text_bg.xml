@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <solid android:color="@color/backCalendar" />
+        <stroke android:width="1px" android:color="@color/frameLine" />
+    </shape>
+</item>
+<item android:bottom="1px">
+    <shape>
+        <solid android:color="@android:color/transparent" />
+        <stroke android:width="1px" android:color="@color/backCalendar" />
+    </shape>
+</item>
+</layer-list>

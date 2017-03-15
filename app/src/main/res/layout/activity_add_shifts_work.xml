@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dip"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/backCalendar"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <EditText
+        android:id="@+id/text_shifts_title"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/text_input_height"
+        android:layout_marginTop="12dip"
+        android:layout_marginStart="@dimen/option_item_horizontal_margin"
+        android:layout_marginEnd="@dimen/option_item_horizontal_margin"
+        android:textSize="@dimen/normal_font_size"
+        android:textColor="@color/colorEditText"
+        android:paddingStart="@dimen/edit_text_padding"
+        android:paddingEnd="@dimen/edit_text_padding"
+        android:gravity="center_vertical"
+        android:background="@drawable/edit_text_bg"
+        android:hint="@string/work_title_hint"
+        android:singleLine="true"
+        android:maxLength="20"
+        />
+
+    <RelativeLayout
+        android:id="@+id/period_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/option_item_height"
+        android:layout_marginTop="16dip"
+        android:layout_marginLeft="@dimen/option_item_horizontal_margin"
+        android:layout_marginRight="@dimen/option_item_horizontal_margin"
+        android:background="@drawable/shape_no_corner_without_bottom"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/option_layer_horizontal_margin"
+            android:textSize="@dimen/normal_font_size"
+            android:text="@string/work_period"
+            android:gravity="center"
+            android:textColor="@color/optionLabel"
+            />
+        <TextView
+            android:id="@+id/work_period"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:paddingStart="30dip"
+            android:paddingEnd="@dimen/option_layer_horizontal_margin"
+            android:layout_marginEnd="@dimen/option_layer_horizontal_margin"
+            android:textSize="@dimen/option_value_size"
+            android:gravity="center"
+            android:textColor="@color/optionValue"
+            />
+    </RelativeLayout>
+
+    <include android:id="@+id/work_day_layout_1" layout="@layout/shifts_work_item"/>
+    <include android:id="@+id/work_day_layout_2" layout="@layout/shifts_work_item"/>
+    <include android:id="@+id/work_day_layout_3" layout="@layout/shifts_work_item"/>
+    <include android:id="@+id/work_day_layout_4" layout="@layout/shifts_work_item"/>
+    <include android:id="@+id/work_day_layout_5" layout="@layout/shifts_work_item"/>
+    <include android:id="@+id/work_day_layout_6" layout="@layout/shifts_work_item"/>
+    <include android:id="@+id/work_day_layout_7" layout="@layout/shifts_work_item"/>
+    <include android:id="@+id/work_day_layout_8" layout="@layout/shifts_work_item"/>
+
+    <RelativeLayout
+        android:id="@+id/start_date_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/option_item_height"
+        android:layout_marginLeft="@dimen/option_item_horizontal_margin"
+        android:layout_marginRight="@dimen/option_item_horizontal_margin"
+        android:layout_marginBottom="12dip"
+        android:background="@drawable/shape_bottom_corner_no_top_line"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="@dimen/option_layer_horizontal_margin"
+            android:textSize="@dimen/normal_font_size"
+            android:text="@string/work_start_date"
+            android:gravity="center"
+            android:textColor="@color/optionLabel"
+            />
+        <TextView
+            android:id="@+id/work_start_date"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/option_layer_horizontal_margin"
+            android:textSize="@dimen/option_value_size"
+            android:gravity="center"
+            android:textColor="@color/optionValue"
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

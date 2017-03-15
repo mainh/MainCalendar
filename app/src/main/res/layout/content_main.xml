@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.jjforever.wgj.maincalendar.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/week_line"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backCalendar"
+        android:orientation="vertical">
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#20000000" >
+        </View>
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/weeks_height"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip" >
+
+            <TableRow
+                android:layout_height="fill_parent">
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/week_sun"
+                    android:textColor="@color/date_weekend" />
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/week_mon"
+                    android:textColor="@color/date_work" />
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/week_tue"
+                    android:textColor="@color/date_work" />
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/week_wed"
+                    android:textColor="@color/date_work" />
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/week_thu"
+                    android:textColor="@color/date_work" />
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/week_fri"
+                    android:textColor="@color/date_work" />
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/week_sat"
+                    android:textColor="@color/date_weekend" />
+            </TableRow>
+        </TableLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#20000000" >
+        </View>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/contentPager"
+        android:layout_below="@id/week_line"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/backCalendar"
+        >
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/backMonth" >
+        </android.support.v4.view.ViewPager>
+        <RelativeLayout
+            android:id="@+id/eventLstLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="200dip"
+            android:orientation="vertical"
+            android:layout_alignBottom="@+id/viewpager"
+            >
+            <LinearLayout
+                android:id="@+id/handlerText"
+                android:layout_height="wrap_content"
+                android:background="@color/backCalendar"
+                android:layout_width="fill_parent"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#30000000" >
+                </View>
+                <TextView
+                    android:id="@+id/view_today_schedule"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/schedule_height"
+                    android:text="@string/today_no_things"
+                    android:textSize="@dimen/schedule_txt_size"
+                    android:textColor="#90000000"
+                    android:gravity="center_vertical"
+                    />
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#20000000" >
+                </View>
+            </LinearLayout>
+            <ListView
+                android:id="@+id/record_list"
+                android:layout_below="@id/handlerText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:cacheColorHint="@null"
+                android:background="@color/backCalendar"
+                android:divider="@null" >
+            </ListView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

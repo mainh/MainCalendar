@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.jjforever.wgj.maincalendar.CheckableRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <ToggleButton
+        android:id="@+id/pause_button"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:focusable="false"
+        android:clickable="true"
+        android:checked="true"
+        android:textOff=""
+        android:textOn=""
+        android:background="@drawable/alarm_toggle_button"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/record_title"/>
+
+    <LinearLayout
+        android:id="@+id/record_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_toEndOf="@+id/pause_button"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/record_date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#FC6802"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/txt_date_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#5296C5"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</com.jjforever.wgj.maincalendar.CheckableRelativeLayout>

@@ -1,0 +1,145 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- 主界面用到的字符串 -->
+    <string name="app_name">Main日历</string>
+    <string name="action_daily">日常记录</string>
+    <string name="action_alarm_clock">闹钟记录</string>
+    <string name="action_work_list">轮班记录</string>
+    <string name="action_settings">系统设置</string>
+    <string name="action_about">关于我们</string>
+    <string name="unit_year">年</string>
+    <string name="unit_month">月</string>
+    <string name="week_sun">日</string>
+    <string name="week_mon">一</string>
+    <string name="week_tue">二</string>
+    <string name="week_wed">三</string>
+    <string name="week_thu">四</string>
+    <string name="week_fri">五</string>
+    <string name="week_sat">六</string>
+    <string name="button_today">今</string>
+    <string name="today_is">今天是<xliff:g id="day_count">%1s</xliff:g></string>
+    <string name="today_no_things">当月无日程记录</string>
+    <string name="today_has_things">当日共有<xliff:g id="day_count">%1d</xliff:g>条日程记录</string>
+    <string name="month_has_things">当月共有<xliff:g id="month_count">%1d</xliff:g>条日程记录</string>
+
+    <string-array name="record_type">
+        <item>闹钟</item>
+        <item>日常记录</item>
+        <item>轮班记录</item>
+    </string-array>
+
+    <!-- 公用的字符串 -->
+    <string name="dialog_title">日历提醒</string>
+    <string name="record_content">请输入记录内容&#8230;</string>
+    <string name="please_select_delete_item">请选择要删除的记录&#8230;</string>
+    <string name="delete_success">您所选的记录已成功被删除.</string>
+    <string name="delete_fail">您所选的记录删除时出现错误，请重新尝试.</string>
+    <string name="confirm_delete">确定要删除所选记录吗？</string>
+    <string name="is_cancel_confirm">确定要退出吗？</string>
+    <string name="is_cancel_edit">记录已更改, 确定要退出编辑吗？</string>
+    <string name="existed_record">该标题记录已存在，请修改记录标题&#8230;</string>
+    <string name="must_input_title">请填写记录的标题&#8230;</string>
+    <string name="add_fail">保存数据过程出现异常&#8230;</string>
+    <string name="add_record_success">记录添加成功.</string>
+    <string name="edit_record_success">记录修改成功.</string>
+    <string name="notice_date">日期选择</string>
+    <string name="record_weather">天气</string>
+    <string name="notice_in_calendar">在日历中提示</string>
+    <string name="more_option">更多选项</string>
+    <string name="btn_ok">确定</string>
+    <string name="btn_delete">删除</string>
+
+    <!-- 日常记录相关字符串 -->
+    <string name="add_daily">添加日常</string>
+    <string name="edit_daily">编辑日常</string>
+    <string name="record_title">日常标题</string>
+    <string name="record_time">记录时间</string>
+
+    <!-- 闹钟记录相关字符串 -->
+    <string name="add_alarm">添加闹钟</string>
+    <string name="edit_alarm">编辑闹钟</string>
+    <string name="pause_alarm">暂停闹钟</string>
+    <string name="is_pause">闹钟已暂停&#8230;</string>
+    <string name="no_pause">闹钟已开启&#8230;</string>
+    <string name="alarm_content">请输入闹钟内容</string>
+    <string name="alarm_remark">闹钟备注&#8230;</string>
+    <string name="alarm_type">闹钟类型</string>
+    <string name="alarm_period">间隔天数</string>
+    <string name="notice_time">提醒时间</string>
+    <string name="please_chose_week">请选择星期</string>
+
+    <string-array name="alarm_type_names">
+        <item>指定阳历日期</item>
+        <item>指定农历日期</item>
+        <item>每几日闹钟</item>
+        <item>每星期闹钟</item>
+        <item>阳历每月闹钟</item>
+        <item>阳历每年闹钟</item>
+        <item>农历每月闹钟</item>
+        <item>农历每年闹钟</item>
+    </string-array>
+
+    <!-- 轮班记录相关字符串 -->
+    <string name="add_work">添加轮班</string>
+    <string name="edit_work">编辑轮班</string>
+    <string name="work_title_hint">轮班标题</string>
+    <string name="work_period">轮班周期</string>
+    <string name="work_day_no">第<xliff:g id="day_no">%1d</xliff:g>天</string>
+    <string name="work_start_date">起始日期</string>
+    <string name="work_default_type">休班</string>
+    <string name="work_default_slot">00:00~23:59</string>
+
+    <string name="alarm_notice_tip">&#060;&#060;&#060;&#060;左右滑动确认闹钟&#062;&#062;&#062;&#062;</string>
+
+    <string-array name="work_type">
+        <item>白班</item>
+        <item>夜班</item>
+        <item>休班</item>
+    </string-array>
+
+    <!-- 全局设置相关字符串 -->
+    <string name="theme_color">主题颜色</string>
+    <string name="display_work">轮班显示</string>
+    <string name="not_display">不显示</string>
+    <string name="ring_file">闹钟铃声</string>
+    <string name="has_no">无铃声</string>
+    <string name="ring_time">响铃时间(s)</string>
+    <string name="notification_show">状态栏闹钟提醒</string>
+    <string name="record_log">记录调试信息(MainLog.txt)</string>
+    <string name="set_success">设置保存成功.</string>
+    <string name="is_cancel_set">设置已更改, 确定要退出编辑吗？</string>
+    <string name="about_content">\t\t本日历的初衷是作者实在无法忍受目前的日历软件繁杂无用的功能，就想要个简简单单可以记事可以提醒的日历，再加上个天气功能就可以了。本日历只申请必要权限，我相信是所有日历应用中申请权限最少的一个，由于有闹钟功能，所以需要开机自启权限，有一个后台服务更新天气与保证闹钟响应。感谢众开源作者作品，使我能轻松完成该作品。\n版本更新：\n\tVer1.1:\n\t\t1、一次性闹钟触发完自动进入暂停状态；\n\t\t2、去掉显示闹钟图标的功能，防止与系统闹钟图标显示冲突；\n\t\t3、去掉无用的资源。</string>
+    <string name="about_right">Copyright &#169;<xliff:g id="right_date">%d</xliff:g> Powered By Main Ver<xliff:g id="right_version">%s</xliff:g>\n作者易信：main_h\nJ&#38;J Forever!</string>
+
+    <string-array name="weather_names">
+        <item>晴</item>
+        <item>多云</item>
+        <item>阴</item>
+        <item>雾</item>
+        <item>飓风</item>
+        <item>大暴风雨</item>
+        <item>暴风雨</item>
+        <item>雷阵雨</item>
+        <item>阵雨</item>
+        <item>大雨</item>
+        <item>中雨</item>
+        <item>小雨</item>
+        <item>雨夹雪</item>
+        <item>暴雪</item>
+        <item>阵雪</item>
+        <item>大雪</item>
+        <item>中雪</item>
+        <item>小雪</item>
+        <item>强沙尘暴</item>
+        <item>沙尘暴</item>
+        <item>沙尘</item>
+        <item>风沙</item>
+        <item>冻雨</item>
+        <item>尘土</item>
+        <item>霾</item>
+        <item>无</item>
+    </string-array>
+
+    <string name="title_activity_alarm_notice">AlarmNoticeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>

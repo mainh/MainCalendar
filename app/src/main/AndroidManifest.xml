@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jjforever.wgj.maincalendar">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <!-- 当日期更改时界面当前日期跟着更新 -->
+                <action android:name="android.intent.action.DATE_CHANGED" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddAlarmActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddDailyActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AddShiftsWorkActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DailyRecordList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AlarmRecordList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ShiftsWorkRecordList"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GlobalSettingActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service android:name=".services.CalendarService" />
+
+        <receiver android:name=".services.CalendarReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.TIME_SET" />
+                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".AlarmNoticeActivity"
+            android:theme="@android:style/Theme.Wallpaper.NoTitleBar"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:noHistory="true"
+            android:excludeFromRecents="true"
+            android:taskAffinity=""
+            android:showOnLockScreen="true"
+            android:configChanges="orientation|fontScale|screenLayout|screenSize|keyboardHidden|keyboard|navigation"/>
+    </application>
+
+</manifest>

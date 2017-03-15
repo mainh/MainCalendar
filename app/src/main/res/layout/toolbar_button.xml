@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@android:color/transparent"
+    >
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/colorLunarTitle"
+            android:textSize="@dimen/solar_title_size"
+            android:layout_marginEnd="?attr/actionBarSize"
+            />
+
+        <ImageView
+            android:id="@+id/toolbar_ok_btn"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="@dimen/img_btn_size"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/img_btn_margin"
+            android:gravity="center"
+            android:contentDescription="@string/btn_delete"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_ok"/>
+
+        <ImageView
+            android:id="@+id/toolbar_delete_btn"
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="@dimen/img_btn_size"
+            android:layout_toStartOf="@id/toolbar_ok_btn"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/img_btn_margin"
+            android:scaleType="centerInside"
+            android:contentDescription="@string/btn_ok"
+            android:src="@drawable/icon_delete"
+            android:visibility="invisible"/>
+</RelativeLayout>

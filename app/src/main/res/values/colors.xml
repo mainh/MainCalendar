@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fc4f4f</color>
+    <color name="colorPrimaryDark">#F24949</color>
+    <color name="colorAccent">#fc7531</color>
+    <color name="colorLunarTitle">#fff6f2</color>
+    <color name="date_weekend">@color/colorPrimaryDark</color>
+    <color name="date_work">#66000000</color>
+    <color name="backCalendar">#fffffe</color>
+    <color name="backMonth">#F7F7F7</color>
+    <color name="okText">@color/colorAccent</color>
+    <color name="cancelText">#c96e6e6e</color>
+
+    <!-- 日历界面字体配色 -->
+    <color name="currentMonth">#80000000</color>
+    <color name="currentLunar">#66000000</color>
+    <!--    <color name="notCurrentMonth">#40000000</color>
+    <color name="notCurrentLunar">@color/notCurrentMonth</color>-->
+    <color name="today">@color/colorPrimary</color>
+    <color name="todayLunar">@color/today</color>
+    <color name="holiday">#ff0095</color>
+    <color name="dailyRecord">#fb5902</color>
+    <color name="itemSelected">#4201fbb8</color>
+    <color name="workDay">#4201fbb8</color>
+    <color name="workNight">#423701fb</color>
+
+    <!-- 设置项配色 -->
+    <color name="colorEditText">#cc333333</color>
+    <color name="optionLabel">@color/colorEditText</color>
+    <color name="optionValue">#80000000</color>
+    <color name="frameLine">#80000000</color>
+
+    <color name="black_overlay">#99000000</color>
+</resources>

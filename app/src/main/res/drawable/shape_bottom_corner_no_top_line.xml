@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 底部圆角 白色背景 灰色边框 长方体 -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/backCalendar" />
+            <corners android:topLeftRadius="0.1dp" android:topRightRadius="0.1dp"
+                android:bottomRightRadius="@dimen/frame_radius" android:bottomLeftRadius="@dimen/frame_radius" />
+            <stroke android:width="1px" android:color="@color/frameLine" />
+        </shape>
+    </item>
+    <item
+        android:top="1px"
+        android:bottom="1px"
+        android:left="1px"
+        android:right="1px">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <corners android:topLeftRadius="0.1dp" android:topRightRadius="0.1dp"
+                android:bottomRightRadius="@dimen/frame_radius" android:bottomLeftRadius="@dimen/frame_radius" />
+            <stroke android:width="1px" android:color="@color/backCalendar" />
+        </shape>
+    </item>
+</layer-list>
