@@ -11,3 +11,9 @@
 本项目借鉴并且使用了众多的开源项目，故在本软件基本完善并且使用了较长时间后进行开源，希望能帮助一些朋友。<br />
 项目中做了较详细的注释，有不足之处欢迎指出并帮助修改。<br />
 本项目在无意外情况下不会再做功能的增加，只做程序本身的加固及优化，如需添加功能可开分支或者另建项目。<br />
+项目运行图：<br />
+![主窗口](https://github.com/mainh/MainCalendar/blob/master/doc/screenshot/0.jpg "主窗口")
+![闹钟添加窗口](https://github.com/mainh/MainCalendar/blob/master/doc/screenshot/1.jpg "闹钟添加窗口")
+![轮班添加口](https://github.com/mainh/MainCalendar/blob/master/doc/screenshot/2.jpg "轮班添加窗口")
+![闹钟记录窗口](https://github.com/mainh/MainCalendar/blob/master/doc/screenshot/3.jpg "闹钟记录窗口")
+![系统设置窗口](https://github.com/mainh/MainCalendar/blob/master/doc/screenshot/4.jpg "系统设置窗口")
